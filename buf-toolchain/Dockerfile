@@ -6,7 +6,7 @@
 # Usage:   docker run --rm -v "$PWD:/workspace" buf-toolchain generate
 
 # ---- builder: install the toolchain via go ---------------------------------
-FROM golang:1.23-alpine AS builder
+FROM golang:1.25-alpine AS builder
 
 ARG BUF_VERSION=v1.72.0
 ARG GNOSTIC_VERSION=v0.7.0
